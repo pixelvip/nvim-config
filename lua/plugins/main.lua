@@ -63,7 +63,7 @@ return {
         comment_line = "<leader>cc",
 
         -- Define 'comment' textobject (like `dcc` - delete whole comment block)
-        textobject = "cc",
+        -- textobject = "cc",
       },
     },
   },
