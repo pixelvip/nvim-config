@@ -6,12 +6,14 @@
 function Start_console()
   vim.cmd("term")
   vim.cmd("startinsert")
+  vim.cmd(":setlocal nonumber norelativenumber")
 end
 
 -- Define a function to open terminal and run `rails c`
 function Start_rails_console()
   vim.cmd("term rails c")
   vim.cmd("startinsert")
+  vim.cmd(":setlocal nonumber norelativenumber")
 end
 
 -- Create a key mapping to call the above functions
