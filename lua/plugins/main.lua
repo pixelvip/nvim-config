@@ -50,24 +50,6 @@ return {
     end,
   },
 
-  -- comments
-  {
-    "echasnovski/mini.comment",
-    opts = {
-      mappings = {
-        -- Toggle comment (like `<leader>ccip` - comment inner paragraph) for both
-        -- Normal and Visual modes
-        comment = "<leader>cc",
-
-        -- Toggle comment on current line
-        comment_line = "<leader>cc",
-
-        -- Define 'comment' textobject (like `dcc` - delete whole comment block)
-        -- textobject = "cc",
-      },
-    },
-  },
-
   -- disable flash on search with /
   {
     "folke/flash.nvim",
