@@ -1,25 +1,5 @@
 -- stylua: ignore
 return {
-  -- tree sitter (Syntax highlighting)
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
-        "bash",
-        "html",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "vim",
-        "yaml",
-      })
-    end,
-  },
-
   -- tmux navigation
   {
     "christoomey/vim-tmux-navigator",
@@ -70,6 +50,24 @@ return {
         extensions = { "neo-tree", "lazy" },
       }
     end,
-  }
+  },
+
+  -- comments
+  {
+    "echasnovski/mini.comment",
+    opts = {
+      mappings = {
+        -- Toggle comment (like `<leader>ccip` - comment inner paragraph) for both
+        -- Normal and Visual modes
+        comment = '<leader>cc',
+
+        -- Toggle comment on current line
+        comment_line = '<leader>cc',
+
+        -- Define 'comment' textobject (like `dcc` - delete whole comment block)
+        textobject = 'cc',
+      },
+    }
+  },
 
 }
