@@ -1,9 +1,8 @@
--- stylua: ignore
 return {
   -- tmux navigation
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false
+    lazy = false,
   },
 
   -- add telescope-fzf-native
@@ -34,7 +33,6 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function()
-
       return {
         options = {
           theme = "auto",
@@ -59,15 +57,14 @@ return {
       mappings = {
         -- Toggle comment (like `<leader>ccip` - comment inner paragraph) for both
         -- Normal and Visual modes
-        comment = '<leader>cc',
+        comment = "<leader>cc",
 
         -- Toggle comment on current line
-        comment_line = '<leader>cc',
+        comment_line = "<leader>cc",
 
         -- Define 'comment' textobject (like `dcc` - delete whole comment block)
-        textobject = 'cc',
+        textobject = "cc",
       },
-    }
+    },
   },
-
 }
