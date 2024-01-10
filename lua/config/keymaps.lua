@@ -33,3 +33,11 @@ vim.api.nvim_set_keymap(
   ":lua Start_console('cargo run')<CR>",
   { desc = "Cargo run", noremap = true, silent = true }
 )
+
+-- Search within visial selection
+vim.api.nvim_set_keymap(
+  "v", -- Mode: visual mode
+  "<M-/>", -- Key mapping: <M-/> (Alt + /)
+  "<Esc>/\\%V", -- Command: Escape to normal mode, then start search within the visual selection
+  { noremap = true, silent = true } -- Options: non-recursive mapping, silent execution
+)
