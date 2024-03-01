@@ -17,6 +17,9 @@ require("lazy").setup({
     -- debugger
     { import = "lazyvim.plugins.extras.dap.core" },
 
+    -- copilot
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+
     -- languages
     { import = "lazyvim.plugins.extras.lang.ruby" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
